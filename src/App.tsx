@@ -2,6 +2,8 @@ import React, { useState } from "react"
 import "./styles.css"
 import Weather from "./components/Weather"
 import Day from "./components/Day"
+import Time from "./components/Time"
+import Quote from "./components/Quote"
 
 function App() {
   const [name, setName] = useState<string | null>("")
@@ -48,10 +50,12 @@ function App() {
       ) : (
         <>
           <p>
-            {savedCity}s{savedName}
+            {savedCity} <br /> {savedName}
           </p>
-          {savedCity && <Weather savedCity={savedCity} />}
+          <Weather savedCity={savedCity} />
           <Day />
+          <Time savedName={savedName} />
+          <Quote />
         </>
       )}
     </div>

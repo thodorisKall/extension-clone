@@ -3,15 +3,15 @@ import { WeatherApiResponse } from "../interfaces/OpenWeatherResponse"
 import axios from "axios"
 
 type WeatherTypes = {
-  savedCity: string
+  savedCity: string | null
 }
 
 const Weather = ({ savedCity }: WeatherTypes) => {
   const [weatherData, setWeatherData] = useState<WeatherApiResponse | null>(
     null
   )
-  const weatherApi = `https://api.openweathermap.org/data/2.5/weather?q=${savedCity}&appid=cdae50bde18e7f347886422012156661&units=metric`
 
+  const weatherApi = `https://api.openweathermap.org/data/2.5/weather?q=${savedCity}&appid=cdae50bde18e7f347886422012156661&units=metric`
   const fetchWeather = () => {
     axios
       .get<WeatherApiResponse>(weatherApi)

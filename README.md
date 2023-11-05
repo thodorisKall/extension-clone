@@ -1,46 +1,36 @@
-# Getting Started with Create React App
+# Momentum Clone Project
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Goal of the Project
 
-## Available Scripts
+The primary goal of this TypeScript-React project is to emulate the functionality of the Momentum extension for Chrome, providing a personalized dashboard that greets the user, shows the current time, weather status, date, and a daily quote. It is designed to enhance productivity and offer convenience right in the browser.
 
-In the project directory, you can run:
+## Deployment
 
-### `npm start`
+The project is currently live and can be viewed at [www.myproject.com](https://www.myproject.com).
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Description
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+This Momentum clone is an interactive dashboard that greets users with a personal message at the center of the screen along with the current time. It provides a seamless and minimalistic user experience, displaying the weather status and date in the top corners, and a motivational quote with its author at the bottom of the screen.
 
-### `npm test`
+## Outcome
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+The project serves as a testament to the implementation of modern React practices, such as the use of hooks for state management and effects, and props for component communication.
 
-### `npm run build`
+## Stack
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+The technology stack includes:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- **TypeScript**: for type-safe code
+- **React**: for building the user interface with hooks and component-based architecture.
+- **SASS**
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Vision
 
-### `npm run eject`
+The vision for this project is to expand its capabilities by adding two more features:
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+1. **Links**: Allowing users to add, organize, and access their most frequented or favorite URLs.
+2. **To-do Box**: Enabling users to manage their tasks with add/remove functionalities.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Stage of the Project
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+The project is currently in progress, with the main functionalities of the Momentum clone implemented. The next phase involves the development of the "Links" and "To-do" features, which are currently in the planning and design stages.

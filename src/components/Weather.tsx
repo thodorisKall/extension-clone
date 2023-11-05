@@ -1,6 +1,20 @@
 import React, { useEffect, useState } from "react"
 import { WeatherApiResponse } from "../interfaces/OpenWeatherResponse"
 import axios from "axios"
+import {
+  WiThunderstorm,
+  WiRain,
+  WiSandstorm,
+  WiDaySunnyOvercast,
+} from "react-icons/wi"
+import {
+  BsCloudRainHeavy,
+  BsCloudSnow,
+  BsFillCloudHazeFill,
+  BsFillCloudHaze2Fill,
+  BsFillSunFill,
+  BsClouds,
+} from "react-icons/bs"
 
 type WeatherTypes = {
   savedCity: string | null
@@ -28,10 +42,38 @@ const Weather = ({ savedCity }: WeatherTypes) => {
     fetchWeather()
   }, [])
 
+  const getWeatherIcon = (value: string | null) => {
+    switch (value) {
+      case "Thunderstorm":
+        return <WiThunderstorm />
+      case "Drizzle":
+        return <WiRain />
+      case "Rain":
+        return <BsCloudRainHeavy />
+      case "Snow":
+        return <BsCloudSnow />
+      case "Mist":
+        return <BsFillCloudHazeFill />
+      case "Fog":
+        return <BsFillCloudHaze2Fill />
+      case "Sand":
+        return <WiSandstorm />
+      case "Clear":
+        return <BsFillSunFill />
+      case "Clouds":
+        return <BsClouds />
+      default:
+        return <WiDaySunnyOvercast />
+    }
+  }
+
   return (
     <div className='weather'>
-      <h4>{weatherData?.main.temp} &#8451;</h4>
-      <h3>{weatherData?.name}</h3>
+      <h4>{Math.floor(weatherData?.main.temp ?? 0)} &#8451;</h4>
+      <h3>
+        {weatherData?.name}
+        <span>{getWeatherIcon(weatherData?.weather[0].main ?? "Clear")}</span>
+      </h3>
     </div>
   )
 }

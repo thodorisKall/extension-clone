@@ -31,7 +31,6 @@ const Weather = ({ savedCity }: WeatherTypes) => {
       .get<WeatherApiResponse>(weatherApi)
       .then((res) => {
         setWeatherData(res.data)
-        console.log("WEATHER data: ", res.data)
       })
       .catch((err) => {
         console.log("ERROR at Weather api: ", err.message)

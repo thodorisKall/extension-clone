@@ -8,7 +8,7 @@ const Time = ({ savedName }: TimeTypes) => {
   const currentDate: Date = new Date()
   const currentHour: string = currentDate.getHours().toString()
   const currentMinute: string = currentDate.getMinutes().toString()
-  const currentSecond: string = currentDate.getSeconds().toString()
+  // const currentSecond: string = currentDate.getSeconds().toString()
   if (savedName === null) {
     savedName = "Theo"
   }

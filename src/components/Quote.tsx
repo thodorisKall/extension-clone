@@ -11,7 +11,6 @@ const Quote = () => {
       .get<QuoteApiResponse>(quotesApiUrl)
       .then((res) => {
         setQuoteData(res.data)
-        console.log("Quotes: ", res.data)
       })
       .catch((err) => console.log("ERROR at Quotes api", err.message))
   }

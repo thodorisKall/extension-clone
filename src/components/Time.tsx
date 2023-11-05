@@ -29,7 +29,7 @@ const Time = ({ savedName }: TimeTypes) => {
 
   return (
     <div className='time'>
-      <h2>{`${currentHour}:${currentMinute}`}</h2>
+      <h2>{`${currentHour}:${currentMinute.padStart(2, "0")}`}</h2>
       <h3>{getGreetings(currentHour, savedName)}</h3>
     </div>
   )

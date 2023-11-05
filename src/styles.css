@@ -68,7 +68,6 @@
 }
 
 .weather {
-  border: 2px solid white;
   width: 100%;
   height: 90%;
   grid-row: 1/2;
@@ -78,13 +77,18 @@
 .weather h4 {
   font-size: 2.2rem;
 }
+.weather span {
+  font-size: 1.5rem;
+  margin-left: 10px;
+}
 
 .day {
-  border: 2px solid white;
   width: 100%;
   height: 90%;
   grid-row: 1/2;
   grid-column: 3/4;
+  display: flex;
+  justify-content: end;
 }
 .day h4 {
   font-size: 1.8rem;
@@ -101,10 +105,10 @@
   grid-column: 2/3;
 }
 .time h2 {
-  font-size: 10rem;
+  font-size: 12rem;
 }
 .time h3 {
-  font-size: 2.2rem;
+  font-size: 3rem;
 }
 
 .quote {

@@ -6,7 +6,7 @@ The primary goal of this TypeScript-React project is to emulate the functionalit
 
 ## Deployment
 
-The project is currently live and can be viewed at [www.myproject.com](https://www.myproject.com).
+The project is currently live and can be viewed at [Momentum-clone](https://extension-clone-git-master-thodoriskall.vercel.app/).
 
 ## Description
 

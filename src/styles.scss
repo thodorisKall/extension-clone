@@ -12,7 +12,7 @@
   width: 100vw;
   font-family: "Lato", sans-serif;
   padding: 1.5rem;
-  background-image: url(https://source.unsplash.com/featured/?village&plateau);
+  background-image: url(https://source.unsplash.com/featured/?nature&aerial);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -22,13 +22,54 @@
   grid-template-columns: 1fr 3fr 1fr;
 }
 
+// Form
+.app__form {
+  padding-top: 4rem;
+  width: 50%;
+  height: 80%;
+  margin: auto;
+  color: black;
+  grid-row: 2 / 3;
+  grid-column: 2 / 3;
+  display: flex;
+  flex-direction: column;
+
+  button {
+    width: 85%;
+    margin: 0 auto;
+    border: none;
+    border-radius: $radius;
+    height: 2.4rem;
+    background-color: $orange;
+    cursor: pointer;
+  }
+}
+
+.app__form__name,
+.app__form__city {
+  display: flex;
+  flex-direction: column;
+  width: 85%;
+  margin: 0 auto 2rem;
+
+  label {
+    font-size: $font;
+    margin-bottom: 4px;
+  }
+
+  input {
+    padding: 2px 0 2px 8px;
+    border-radius: $radius;
+    background-color: $lightgrey;
+  }
+}
+
 // Weather
 .weather {
   border: 2px solid white;
   width: 100%;
   height: 90%;
-  grid-row-start: 1;
-  grid-row-end: 2;
+  grid-row: 1 / 2;
   display: flex;
   flex-direction: column;
 
@@ -41,8 +82,7 @@
   border: 2px solid white;
   width: 100%;
   height: 90%;
-  grid-row-start: 1;
-  grid-row-end: 2;
+  grid-row: 1 / 2;
   grid-column: 3 / 4;
 
   h4 {

@@ -7,8 +7,8 @@ function Day() {
   const year: string = dateInfo.getFullYear().toString()
 
   return (
-    <div>
-      <h3>{`${day}/ ${month}/ ${year}`}</h3>
+    <div className='day'>
+      <h4>{`${day}/ ${month}/ ${year}`}</h4>
     </div>
   )
 }

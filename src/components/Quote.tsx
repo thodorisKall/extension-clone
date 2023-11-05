@@ -21,7 +21,7 @@ const Quote = () => {
   }, [])
 
   return (
-    <div>
+    <div className='quote'>
       <h3>{quotesData?.content}</h3>
       <p>- {quotesData?.author}</p>
     </div>

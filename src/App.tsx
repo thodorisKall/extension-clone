@@ -49,9 +49,6 @@ function App() {
         </>
       ) : (
         <>
-          <p>
-            {savedCity} <br /> {savedName}
-          </p>
           <Weather savedCity={savedCity} />
           <Day />
           <Time savedName={savedName} />

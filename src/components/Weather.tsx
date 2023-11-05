@@ -31,7 +31,7 @@ const Weather = ({ savedCity }: WeatherTypes) => {
   return (
     <div className='weather'>
       <h4>{weatherData?.main.temp} &#8451;</h4>
-      <h4>{weatherData?.name}</h4>
+      <h3>{weatherData?.name}</h3>
     </div>
   )
 }

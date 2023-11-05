@@ -22,30 +22,37 @@ function App() {
     <div className='app'>
       {!showComponents ? (
         <>
-          <form>
-            <input
-              type='text'
-              placeholder='Enter your little name'
-              onChange={(e: React.ChangeEvent<HTMLInputElement>) =>
-                setName(e.target.value)
-              }
-            />
-            <input
-              type='text'
-              placeholder='Enter the city you prefer'
-              onChange={(e: React.ChangeEvent<HTMLInputElement>) =>
-                setCity(e.target.value)
-              }
-            />
+          <form className='app__form'>
+            <div className='app__form__name'>
+              <label>Name:</label>
+              <input
+                type='text'
+                placeholder='Enter your little name'
+                onChange={(e: React.ChangeEvent<HTMLInputElement>) =>
+                  setName(e.target.value)
+                }
+              />
+            </div>
+            <div className='app__form__city'>
+              <label>City:</label>
+              <input
+                type='text'
+                placeholder='Enter the city you prefer'
+                onChange={(e: React.ChangeEvent<HTMLInputElement>) =>
+                  setCity(e.target.value)
+                }
+              />
+            </div>
+
+            <button
+              onClick={(e: React.MouseEvent<HTMLButtonElement>) => {
+                handleSave(e)
+                setShowComponents(true)
+              }}
+            >
+              Goo
+            </button>
           </form>
-          <button
-            onClick={(e: React.MouseEvent<HTMLButtonElement>) => {
-              handleSave(e)
-              setShowComponents(true)
-            }}
-          >
-            Goo
-          </button>
         </>
       ) : (
         <>

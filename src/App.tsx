@@ -50,7 +50,7 @@ function App() {
                 setShowComponents(true)
               }}
             >
-              Goo
+              Start
             </button>
           </form>
         </>

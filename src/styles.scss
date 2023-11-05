@@ -37,6 +37,8 @@
   button {
     width: 85%;
     margin: 0 auto;
+    font-size: 1.4rem;
+    letter-spacing: 2.5px;
     border: none;
     border-radius: $radius;
     height: 2.4rem;
@@ -61,6 +63,11 @@
     padding: 2px 0 2px 8px;
     border-radius: $radius;
     background-color: $lightgrey;
+    height: $height;
+  }
+
+  input:focus {
+    outline: none;
   }
 }
 

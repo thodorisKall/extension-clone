@@ -10,10 +10,7 @@
   width: 100vw;
   font-family: "Lato", sans-serif;
   padding: 1.5rem;
-  background-image: url(https://source.unsplash.com/featured/?nature&aerial);
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-color: black;
   color: #fffafa;
   display: grid;
   grid-template-rows: 1fr 7fr 1fr;

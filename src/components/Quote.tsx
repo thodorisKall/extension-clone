@@ -8,7 +8,7 @@ const Quote = () => {
 
   const fetchQuotes = () => {
     axios
-      .get<QuoteApiResponse>(quotesApiUrl)
+      .get<QuoteApiResponse>("https://dummyjson.com/quotes/random")
       .then((res) => {
         setQuoteData(res.data)
       })
@@ -21,7 +21,7 @@ const Quote = () => {
 
   return (
     <div className='quote'>
-      <h3>{quotesData?.content}</h3>
+      <h3>{quotesData?.quote}</h3>
       <p>- {quotesData?.author}</p>
     </div>
   )

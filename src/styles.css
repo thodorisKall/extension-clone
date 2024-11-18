@@ -10,7 +10,10 @@
   width: 100vw;
   font-family: "Lato", sans-serif;
   padding: 1.5rem;
-  background-color: black;
+  background-image: url(https://picsum.photos/1024/768);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
   color: #fffafa;
   display: grid;
   grid-template-rows: 1fr 7fr 1fr;
